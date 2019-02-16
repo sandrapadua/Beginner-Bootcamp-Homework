@@ -1,0 +1,39 @@
+img {
+    width:  75px;
+    height: 75px;
+  }
+  body{
+    background-image: url(../images/forest1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: auto;
+
+}
+#gun1{
+position: absolute;
+right: 0px;
+bottom: 0px;
+}
+#gun2{
+    position: absolute;
+    right: 100px;
+    bottom: 70px;  
+}
+
+#enemy{
+    position: absolute;
+    right: 100px;
+    bottom: 70px;  
+}
+#detailTable{
+    position: absolute;
+    right: 0px; 
+}
+
+#inventory{
+    position: absolute;
+    left: 150px; 
+    top: 50px; 
+    padding:1px
+}

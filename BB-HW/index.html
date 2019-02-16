@@ -3,16 +3,47 @@
     <meta charset="utf-8">
     <title>Mocha Tests</title>
     <link href="https://unpkg.com/mocha@4.0.1/mocha.css" rel="stylesheet" />
-</head>
-<body>
-<img id = "inn" onclick="rest(hero)">
-<img id = "dagger" onclick = "pickUpItem(hero,weaponObject)">
-<img id = "bag" onclick = "equipWeapon(hero)">
-  <!-- YOUR HTML HERE -->
+<link href="./css/style.css" type="text/css" rel="stylesheet">
+  </head>
+<body onload="dynamicEnemy(); displayGamerDetails(hero)">
+ 
+ 
+  <form onsubmit="setName(hero); return false;"> 
+Name <input type="text" id="gamerName" >
+<input type="submit" value="submit" >
+  <!-- <button onclick="setName(hero)">submit</button> -->
+</form>
+    <table id = "detailTable">
+        <tr>
+          <td>Name : </th>
+          <td id="heroName"></td>
+        </tr>
+        <tr>
+          <td>Health : </th>
+          <td id= "heroHealth"></td>
+        </tr>
+        <tr>
+            <td>Messages : </th>
+            <td id= "heroMsg"></td>
+          </tr>
+      </table>
 
 
+<!-- <img id = "smallGun" src="images/empty.jpg">
+<img id = "largeGun" src = "images/empty.jpg"> -->
+<div id=inventory>
+<img id = "inn" src = "images/rest.png" onclick  = "rest(hero)">
+<img id = "dagger" src="images/knife.png" onclick = "pickUpItem(hero,weaponObject)">
+<img id = "bag" src="images/bag.png"  onclick = "equipWeapon(hero)">
 
-  <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
+<!-- <img id = "gun1" src="images/gun1.jpg" onclick="addToInventory1();pickUpItem(hero,weaponObject)">
+<img id = "gun2" src = "images/gun2.png" onclick="addToInventory2();pickUpItem(hero,weaponObject)"> -->
+</div>
+
+<img id = "enemy" src="images/enemy.png"  onclick = "actionPlan(hero)">
+<p id = "msg" style="color:red;visibility: hidden;" >One Enemy Down....</p>
+
+<!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
   <div id="mocha"></div>
 
