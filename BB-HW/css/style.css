@@ -3,7 +3,7 @@ img {
     height: 75px;
   }
   body{
-    background-image: url(../images/forest1.png);
+    background-image: url(../images/bg_Forest.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
