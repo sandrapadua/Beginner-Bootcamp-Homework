@@ -1,6 +1,7 @@
 img {
     width:  75px;
     height: 75px;
+    cursor: pointer;
   }
   body{
     background-image: url(../images/bg_Forest.png);
@@ -8,6 +9,7 @@ img {
     background-attachment: fixed;
     background-position: center;
     background-size: auto;
+    cursor: cell;
 
 }
 #gun1{
@@ -25,10 +27,12 @@ bottom: 0px;
     position: absolute;
     right: 100px;
     bottom: 70px;  
+    cursor: cell;
+
 }
 #detailTable{
     position: absolute;
-    right: 0px; 
+    right: 80px; 
 }
 
 #inventory{
