@@ -23,25 +23,29 @@ Name <input type="text" id="gamerName" >
           <td id= "heroHealth"></td>
         </tr>
         <tr>
-            <td>Messages : </th>
-            <td id= "heroMsg"></td>
+            <td>Inventory : </td>
+            <th id= "heroInventory"></th>
           </tr>
+          <tr>
+              <td>Messages : </td>
+              <th id= "heroMsg"></th>
+            </tr>
       </table>
 
 
 <!-- <img id = "smallGun" src="images/empty.jpg">
 <img id = "largeGun" src = "images/empty.jpg"> -->
 <div id=inventory>
-<img id = "inn" src = "images/rest.png" onclick  = "rest(hero)">
-<img id = "dagger" src="images/knife.png" onclick = "pickUpItem(hero,weaponObject)">
-<img id = "bag" src="images/bag.png"  onclick = "equipWeapon(hero)">
+<img id = "inn" src = "images/rest.png" onclick  = "rest(hero);">
+<img id = "dagger" src="images/knife.png" onclick = "pickUpItem(hero,weaponObject);">
+<img id = "bag" src="images/backpack.png"  onclick = "equipWeapon(hero)">
 
 <!-- <img id = "gun1" src="images/gun1.jpg" onclick="addToInventory1();pickUpItem(hero,weaponObject)">
 <img id = "gun2" src = "images/gun2.png" onclick="addToInventory2();pickUpItem(hero,weaponObject)"> -->
 </div>
 
 <img id = "enemy" src="images/enemy1.png"  onclick = "actionPlan(hero)">
-<p id = "msg" style="color:red;visibility: hidden;" >One Enemy Down....</p>
+<p id = "msg" style="visibility: hidden;"></p>
 
 <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->
   <button onclick="mocha.checkLeaks(); mocha.run();">Run the tests!</button>
